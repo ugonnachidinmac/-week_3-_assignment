@@ -9,7 +9,9 @@ let age = 30;
 let nationality = "Nigerian"; 
 
 // Combine the values into a sentence
-let introduction = "Hi, my name is " + name + ". I am " + age + " years old and I am " + nationality + ".";
+// let introduction = "Hi, my name is " + name + ". I am " + age + " years old and I am " + nationality + ".";
+
+let introduction = `Hi, my name is  ${name}. I am ${age} years old and I am ${nationality}.`;
 console.log(introduction);
 
 // Display the introduction in the <p> with id="intro"
@@ -84,6 +86,7 @@ let totalPrice = item1 + item2 + item3;
 let priceMessage = "The total price of all 3 items is $" + totalPrice;
 
 console.log(priceMessage)
+
 // Display the message on the page
 document.getElementById("total").textContent = priceMessage;
    
